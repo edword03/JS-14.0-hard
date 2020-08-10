@@ -1,6 +1,9 @@
-const num = 266219;
+let num = 266219;
 
-console.log(String(num).split('').reduce((sum, current) => {
+num = String(num).split('').reduce((sum, current) => {
   return sum * current;
-})**3);
+});
+console.log(num);
 
+num = num**3;
+console.log(String(num).slice(0, 2));
